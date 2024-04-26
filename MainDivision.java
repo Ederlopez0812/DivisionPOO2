@@ -9,7 +9,7 @@ public class MainDivision {
         // se llama al metodo Scanner
         Scanner n1 = new Scanner(System.in);
         // se ingresa el mensaje que se le dara al usuario
-
+        Division d1 = new Division();
         System.out.println("Ingresa un numero");
         // se almacena el valor del usuario
         int a = n1.nextInt();
@@ -20,7 +20,10 @@ public class MainDivision {
         // se hace la operacion con los datos ingresados por el usuario
         int r = a / b;
         // se imprime el resultado de la operacion y se muestra en pantalla
-        System.out.println("El resultado es:" + r);
+        d1.a=a;
+        d1.b=b;
+        d1.dividir(a, b);
+        System.out.println("el resultado es :"+r);
 
         // se cierra el metodo mian
     }
