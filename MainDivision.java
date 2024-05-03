@@ -20,10 +20,10 @@ public class MainDivision {
         // se hace la operacion con los datos ingresados por el usuario
         int r = a / b;
         // se imprime el resultado de la operacion y se muestra en pantalla
-        d1.a=a;
-        d1.b=b;
+        d1.setA(a);
+        d1.setB(b);
         d1.dividir(a, b);
-        System.out.println("el resultado es :"+r);
+       System.out.println(d1.toString());
 
         // se cierra el metodo mian
     }
